@@ -1,0 +1,11 @@
+ticker,company_name,sector,industry,esg_score,environment_score,social_score,governance_score,market_cap,date_fetched
+AAPL,Apple Inc.,Technology,Consumer Electronics,76.0,72.0,78.0,80.0,3000000000000,2026-06-12
+MSFT,Microsoft Corporation,Technology,Software,83.0,80.0,85.0,82.0,2800000000000,2026-06-12
+GOOGL,Alphabet Inc.,Technology,Internet Services,75.0,70.0,78.0,76.0,1800000000000,2026-06-12
+JPM,JPMorgan Chase & Co.,Financial Services,Banks,65.0,60.0,68.0,70.0,500000000000,2026-06-12
+XOM,Exxon Mobil Corporation,Energy,Oil & Gas,45.0,35.0,50.0,55.0,450000000000,2026-06-12
+JNJ,Johnson & Johnson,Healthcare,Pharmaceuticals,78.0,75.0,80.0,78.0,400000000000,2026-06-12
+WMT,Walmart Inc.,Consumer Defensive,Retail,70.0,68.0,72.0,70.0,420000000000,2026-06-12
+TSLA,Tesla Inc.,Consumer Cyclical,Automobiles,65.0,80.0,55.0,60.0,800000000000,2026-06-12
+VZ,Verizon Communications Inc.,Communication Services,Telecom,72.0,70.0,74.0,72.0,150000000000,2026-06-12
+NEE,NextEra Energy Inc.,Utilities,Electric Utilities,82.0,85.0,80.0,80.0,160000000000,2026-06-12
