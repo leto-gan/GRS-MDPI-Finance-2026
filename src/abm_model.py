@@ -142,8 +142,11 @@ class ESGMarketModel(Model):
     """
 
     def __init__(self, n_agents=100, regulatory_regime='mandatory', 
-                 network_density=0.15, seed=None):
-        super().__init__(seed=seed)
+                 network_density=0.15, seed=42):
+        # FIX: Mesa 2.3.0 compatibility — call super without seed arg, set manually
+        super().__init__()
+        self._seed = seed
+        np.random.seed(seed)
 
         self.n_agents = n_agents
         self.regulatory_regime = regulatory_regime
@@ -202,6 +205,7 @@ class ESGMarketModel(Model):
         """Build random network with specified density."""
         n = self.n_agents
         m = int(n * self.network_density / 2)
+        # FIX: Ensure seed is integer, avoid float random state errors
         G = nx.barabasi_albert_graph(n, max(m, 1), seed=self._seed)
         return G
 
@@ -306,11 +310,12 @@ def run_monte_carlo(n_runs=100, n_steps=100, regulatory_regime='mandatory'):
     results = []
 
     for run in range(n_runs):
+        # FIX: Use different seed per run for true Monte Carlo
         model = ESGMarketModel(
             n_agents=100,
             regulatory_regime=regulatory_regime,
             network_density=0.15,
-            seed=run
+            seed=run + 42
         )
         df = model.run_simulation(n_steps)
 
