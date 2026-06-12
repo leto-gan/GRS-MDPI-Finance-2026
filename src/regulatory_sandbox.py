@@ -173,14 +173,12 @@ if __name__ == '__main__':
     print("Initializing Regulatory Sandbox...")
     sandbox = RegulatorySandbox()
 
-    print("
-Regulatory configurations:")
+    print("Regulatory configurations:")
     for name, config in sandbox.configs.items():
         print(f"  {name}: precision={config.disclosure_precision}, "
               f"penalty={config.penalty_greenwashing}, "
               f"buffer={config.counter_cyclical_buffer}")
 
-    print("
-Policy recommendations:")
+   print("Policy recommendations:")
     for rec in sandbox.get_policy_recommendations():
         print(f"  - {rec}")
