@@ -13,7 +13,7 @@ The GRS integrates three components:
 
 ## Publication
 
-This code supports the manuscript submitted to **MDPI Finance**:
+This code supports the manuscript submitted to **MDPI FinTech**:
 > "Systemic Repricing Risk in ESG Markets: An Agent-Based Network Model of Greenium Fragility under Climate Shock Scenarios"
 
 ## Installation
