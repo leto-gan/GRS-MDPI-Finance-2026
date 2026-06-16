@@ -52,3 +52,5 @@ outputs/simulation_results/*.csv
 
 # Logs
 *.log
+__pycache__/
+*.pyc
