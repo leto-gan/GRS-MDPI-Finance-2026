@@ -1,0 +1,10 @@
+param_name,param_value,baseline,status,greenium_threshold_bps,phase_transition_preserved,systemic_loss_pct,max_cascade_nodes_pct,recovery_quarters
+regulatory_regime,baseline,mandatory,success,,False,,,
+regulatory_regime,voluntary,mandatory,success,,False,,,
+regulatory_regime,mandatory,mandatory,success,,False,,,
+n_runs,300,500,success,,False,,,
+n_runs,500,500,success,,False,,,
+n_runs,700,500,success,,False,,,
+n_steps,50,100,success,,False,,,
+n_steps,100,100,success,,False,,,
+n_steps,150,100,success,,False,,,
